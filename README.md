@@ -2,13 +2,13 @@
 
 Deterministic pseudo-random value generator in JavaScript.
 
-Very simple implementation in pure JavaScript, without any dependencies.
-Compatible with Browsers, Node.js, React Native, etc.
+* Implements a [Lehmer random number generator](https://en.wikipedia.org/wiki/Lehmer_random_number_generator).
+* Simple implementation in pure JavaScript, without any dependencies.
+* Compatible with Browsers, Node.js, React Native, etc.
 
-This generator will return deterministic results according to a given seed.
-This is NOT a cryptographically secure random number generator. It is quite
-the opposite! The intention is to generate a sequence of random numbers that
-can be re-generated.
+This is NOT a cryptographically secure random number generator.
+The intention is to generate a sequence of random numbers that can be
+re-generated when using the same seed.
 
 ## How to use it
 
