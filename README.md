@@ -10,6 +10,12 @@ This is NOT a cryptographically secure random number generator.
 The intention is to generate a sequence of random numbers that can be
 re-generated when using the same seed.
 
+## Install
+
+```
+$ npm install rand0m
+```
+
 ## How to use it
 
 ```
