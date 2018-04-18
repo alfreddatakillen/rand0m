@@ -1,0 +1,23 @@
+{
+  "name": "rand0m",
+  "version": "1.0.0",
+  "description": "Pseudo-random value generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfreddatakillen/rand0m.git"
+  },
+  "author": "Alfred Godoy <alfred@nurd.nu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfreddatakillen/rand0m/issues"
+  },
+  "homepage": "https://github.com/alfreddatakillen/rand0m#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.0"
+  }
+}
