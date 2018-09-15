@@ -83,4 +83,40 @@ describe('Rand0m', () => {
 
 	});
 
+	describe('.char()', () => {
+
+		it('should return the right values', () => {
+			const rand = new Rand0m(4711);
+			expect(rand.char()).to.equal('c');
+			expect(rand.char()).to.equal('W');
+			expect(rand.char()).to.equal('y');
+		});
+
+		it('should return one char only if only one is allowed', () => {
+			const rand = new Rand0m(4711);
+			expect(rand.char('a')).to.equal('a');
+			expect(rand.char('b')).to.equal('b');
+			expect(rand.char('c')).to.equal('c');
+		});
+
+	});
+
+	describe('.str()', () => {
+
+		it('should return the right values', () => {
+			const rand = new Rand0m(4711);
+			expect(rand.str()).to.equal('WyjxSPXZqdCD446A');
+			expect(rand.str()).to.equal('N7mepnh3uqkazCPNyM9m');
+			expect(rand.str()).to.equal('CcVkX7DpTawSexvZJBUkwSsUrdLeF');
+		});
+
+		it('should return one char only if only one is allowed', () => {
+			const rand = new Rand0m(4711);
+			expect(rand.str(3, 3, 'a')).to.equal('aaa');
+			expect(rand.str(4, 4, 'b')).to.equal('bbbb');
+			expect(rand.str(5, 5, 'c')).to.equal('ccccc');
+		});
+
+	});
+
 });
